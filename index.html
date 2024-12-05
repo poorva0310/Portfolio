@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle, #f48258, #f9dfc2, #f14a6b);
+            color: #0f0f0f;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #f14a6b;
+        }
+
+        /* Navbar Styling */
+
+        .navbar {
+            background-color: #fff7f752;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+           
+            
+        }
+
+        .navbar-brand {
+            font-weight: bolder;
+            color: #403d39;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        
+        }
+
+        
+
+
+        /* Hero Section */
+
+        .btn-primary {
+            background-color: #e8327b;
+            border: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: #730786;
+        }
+
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+           
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            font-family:fantasy 
+            
+        }
+
+        .hero h4 {
+            
+            color: #363636;
+        
+            }
+
+
+        .hero span {
+            display: inline-block;
+            animation: float 4s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+
+
+        /* Section Styling */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #353535;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        /* Cards */
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: scrollUp 0.6s ease-out;
+            background-color: rgba(255, 255, 255, 0.58);
+            padding: 5px;
+        }
+
+        @keyframes scrollUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* About Section Styles */
+        
+        #about img {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #about .card-body {
+            padding-right: 2rem;
+        }
+
+        #about .img-container {
+            text-align: right;
+        }
+
+
+
+        /* Footer */
+        footer {
+            background-color: #403d39;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem ;
+            height: 40px;
+        }
+
+
+    
+    </style>
+</head>
+
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Poorva</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h4>Welcome to</h4>
+            <h1><span>;P Design.</span></h1>
+            <p>Your one-stop solution for creative designs and impactful projects.</p> 
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        </div>
+    </section>
+
+   
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2> My Artworks</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="qurvy.html">
+                        <img src="imgs/PD.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Packaging Design</h5>
+                            <p class="card-text">A unique packaging for a Hair cream.</p></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="lush.html">
+                        <img src="imgs/lush.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lush - Valentine's edition</h5>
+                            <p class="card-text">Re-designing products with a twist of Love.</p></a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <a href="maggi.html">
+                        <img src="imgs/maggicam.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Maggi Campaign</h5>
+                            <p class="card-text">A campaignfor Meri Maggi.</p></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- About Me Section -->
+     <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        Hey there! I’m Poorva, a communication design student at Atlas University in Mumbai, 
+                        where my journey into the world of design began. Ever since I can remember, I've 
+                        been captivated by the power of visual storytelling. Whether doodling in my notebooks 
+                        or experimenting with colors and shapes, I’ve always found joy in creating something 
+                        that speaks to people. <br> <br>
+
+                        Currently, I’m diving deep into the realms of graphic design, branding, and user experience. 
+                        My passion lies in crafting designs that not only look good but also communicate ideas effectively. 
+                        I believe that great design can bridge gaps and foster connections, and I strive to bring that 
+                        philosophy into every project I undertake. <br> <br>
+
+                        When I'm not buried in design projects or sketching ideas, you can find me exploring 
+                        Mumbai’s vibrant streets for inspiration or indulging in my love for photography. Each 
+                        experience fuels my creativity and helps me grow as a designer. <br><br>
+
+                        <b>I invite you to connect with me and join me on this exciting journey of creativity and 
+                        innovation. Let’s create something amazing together!</b>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="imgs/port.png" alt="Poorva">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    
+                    <p><b>Class 12<sup> th </sup> - Science </b> <br>- Narayana College, Thane.</p>
+                    <p><b>Second Year in Bachelor of Design (B.Des)</b> <br>- Atlas Skilltech University, Mumbai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="card">
+                <div class="card-body">
+            
+            <p>Graphic Designer (Intern) </p>
+            <p>Freelance Designer - Various Clients</p>
+            <p>Events - Been a part of corporate events </p>
+        </div>
+    </div>
+</div>
+    </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="card">
+                    <div class="card-body">
+                <p>Email: <a href="mailto:Poorvakolhe2005@gmail.com">Poorvakolhe2005@gmail.com</a></p>
+                <p>Phone: <a href="#">+91 9987453897</a></p>
+            </div>
+        </section>
+    
+
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Portfolio. All Rights Reserved.</p>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
